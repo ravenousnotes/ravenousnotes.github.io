@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ravenous Notes</title>
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <!-- CSS -->  
+    <style type="text/css">
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        color: white;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      h1, h2, ul{
+        color: white;
+      }
+      tr:nth-child(even) {
+        background: rgba(135, 206, 235,0.5);
+      }
+      img.bg {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
+      	
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+      	
+        /* Set up positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      @media screen and (max-width: 1024px) { /* Specific to this particular image */
+        img.bg {
+          left: 50%;
+          margin-left: -512px;   /* 50% */
+        }
+      }
+      .table1 {
+      background: rgba(0,0,0,0.5);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <img src="/img/bg/br_mayumi_fin_wp_2844x1600.jpg" class="bg" style="z-index:-1;">
+
+    <a href="https://ravenousnotes.neocities.org/" style="text-decoration: none">
+    <img src='/img/icons/home.png' alt="home icon" style="width:110px;height:110px" onmouseover="this.src='/img/icons/home_highlighted.png';" onmouseout="this.src='/img/icons/home.png';"/></a>
+
+    <img src='/img/icons/lib.png' alt="paper icon" style="width:110px;height:110px;" onmouseover="this.src='/img/icons/lib_highlighted.png';" onmouseout="this.src='/img/icons/lib.png';"/>
+
+    <a href="game.html" style="text-decoration: none"><img src='/img/icons/gamepad.png' alt="gamepad icon" style="width:110px;height:110px;" onmouseover="this.src='/img/icons/gamepad_highlighted.png';" onmouseout="this.src='/img/icons/gamepad.png';"/></a>
+
+    <img src='/img/icons/paw.png' alt="paw icon" style="width:110px;height:110px;" onmouseover="this.src='/img/icons/paw_highlighted.png';" onmouseout="this.src='/img/icons/paw.png';"/>
+
+    <img src='/img/icons/disc.png' alt="disc icon" style="width:110px;height:110px;" onmouseover="this.src='/img/icons/disc_highlighted.png';" onmouseout="this.src='/img/icons/disc.png';"/>
+
+    <h1>KC Guide</h1>
+    <h2>Legend:</h2>
+    <ul>
+      <li>B = bucket</li>
+      <li>DM = development material</li>
+      <li>IC = instant construction</li>
+      <li>S = screw</li>
+      <li>Fbox = furniture box</li>
+    </ul>
+    <h2>Daily Quests</h2>
+    <table class='table1'>
+      <tr>
+        <th>#</th>
+        <th>Req.</th>
+        <th>Res.</th>
+        <th>Rew.</th>
+        <th>Nxt.</th>
+      </tr>
+      <tr>
+        <td>F5</td>
+        <td>Craft a piece of equipment</td>
+        <td>40 / 40 / 40 / 40</td>
+        <td>1x IC, 1x DM</td>
+        <td>+F6</td>
+      </tr>
+      <tr>
+        <td>F6</td>
+        <td>Craft a ship</td>
+        <td>50 / 50 / 50 / 50</td>
+        <td>1x B, 1x DM</td>
+        <td>+F7</td>
+      </tr>
+      <tr>
+        <td>F7</td>
+        <td>Craft 3 pieces of equipment</td>
+        <td>100 / 100 / 100 / 100</td>
+        <td>2x DM</td>
+        <td>+F8, +F51</td>
+      </tr>
+      <tr>
+        <td>F8</td>
+        <td>Craft 3 ships</td>
+        <td>200 / 200 / 300 / 100</td>
+        <td>1x IC, 2x DM</td>
+        <td>+F9, +F16, +F18</td>
+      </tr>
+      <tr>
+        <td>F9</td>
+        <td> Scrap 2 ships</td>
+        <td>0 / 0 / 0 / 50</td>
+        <td>1x B</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>F18</td>
+        <td>Do equipment modernization 1 time</td>
+        <td>0 / 50 / 0 / 0</td>
+        <td>1x S</td>
+        <td>+F34, +F50</td>
+      </tr>
+      <tr>
+        <td>Bd1</td>
+        <td>Defeat an enemy fleet</td>
+        <td>50 / 50 / 0 / 0</td>
+        <td>1x DM</td>
+        <td>+Bd2, +Bd4, +Bd6, +A54, +A68(?), +A72(?)</td>
+      </tr>
+      <tr>
+        <td>Bd2</td>
+        <td>Complete a battle</td>
+        <td>50 / 50 / 50 / 50</td>
+        <td>1x B 1x DM</td>
+        <td>+Bd3, +Bd5, +Bw1, +Bw3, +A58(?), +A66, +A67, +B48, +B63, +C8, +C9, +F31</td>
+      </tr> 
+      <tr>
+        <td>Bd5</td>
+        <td>Sink 3 enemy Transport Ships (W2-1)</td>
+        <td>100 / 50 / 200 / 50</td>
+        <td>1x B 1x DM</td>
+        <td>+Bd7, +Bw2, +C13</td>
+      </tr> 
+    </table>
+
+    <h2>Weekly Quests</h2>
+    <table class='table1'>
+      <tr>
+        <th>#</th>
+        <th>Req.</th>
+        <th>Res.</th>
+        <th>Rew.</th>
+        <th>Nxt.</th>
+      </tr>
+      <tr>
+        <td>F34</td>
+        <td>Scrap 6 pieces of Anti-Air Guns.</td>
+        <td>0 / 100 / 0 / 200</td>
+        <td>1x S, 2x DM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>bw2</td>
+        <td>Sink 20 Aircraft Carriers (CV/CVL)</td>
+        <td>0 / 500 / 0 / 500</td>
+        <td>2x DM</td>
+        <td>+Bw5, +F32</td>
+      </tr>
+      <tr>
+        <td>bw4</td>
+        <td>Sink 50 Transport Ships</td>
+        <td>400 / 0 / 800 / 0</td>
+        <td>3x B</td>
+        <td>+Bw10, +Bm3, +Bm6</td>
+      </tr>
+      <tr>
+        <td>bw5</td>
+        <td>Sink 15 Submarines</td>
+        <td>600 / 0 / 0 / 0</td>
+        <td>2x B 1x S</td>
+        <td>+Bw6, +Bw7, +F12, +A71, +B72, +F41</td>
+      </tr>
+      <tr>
+        <td>bw6</td>
+        <td>Defeat 12 bosses in the World 4</td>
+        <td>400 / 0 / 0 / 700</td>
+        <td>2x DM</td>
+        <td>Bw8</td>
+      </tr>
+      <tr>
+        <td>bw7</td>
+        <td>Defeat 5 bosses in the Northern Sea 3-3, 3-4, or 3-5</td>
+        <td>300 / 300 / 400 / 300</td>
+        <td>1x Fbox M 3x DM 3x S</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>bw8</td>
+        <td>Defeat the boss in 4-4</td>
+        <td>500 / 0 / 500 / 0</td>
+        <td>1x B 1x DM</td>
+        <td>Bw9</td>
+      </tr>
+      <tr>
+        <td>bw9</td>
+        <td>Sortie to 5-2 and get an S-Rank at the boss node 2x</td>
+        <td>0 / 300 / 0 / 800</td>
+        <td>2x DM 2x S</td>
+        <td>+B44, +B62</td>
+      </tr>
+      <tr>
+        <td>bw10</td>
+        <td>Sortie to 1-5 & get an A-rank or up at the boss node 3x</td>
+        <td>100 / 0 / 0 / 0</td>
+        <td>3x S</td>
+        <td>+A45, +Bw4</td>
+      </tr>
+    </table>
+
+    <h2>Recipes</h2>
+    <table class='table1'>
+      <tr>
+        <th>Eq.</th>
+        <th>F/A/S/B</th>
+        <th>Res.</th>
+        <th>%</th>
+        <th>FS.</th>
+      </tr>
+      <tr>
+        <td>Drum Canister</td>
+        <td>10 / 10 / 11 / 10</td>
+        <td>F/S</td>
+        <td>7.49%</td>
+        <td>SS/DD</td>
+      </tr>
+      <tr>
+        <td>Type 0 Observation Seaplane</td>
+        <td>21 / 10 / 20 / 20</td>
+        <td>F/S</td>
+        <td>2%</td>
+        <td>CV</td>
+      </tr>
+      <tr>
+        <td>Reppuu/Ryuusei Kai</td>
+        <td>20 / 60 / 10 / 100</td>
+        <td>B/B</td>
+        <td>2%/2%</td>
+        <td>CV</td>
+      </tr>
+      <tr>
+        <td>Zuiun</td>
+        <td>20 / 30 / 10 / 50</td>
+        <td>B</td>
+        <td>6%</td>
+        <td>CV</td>
+      </tr>
+    </table>
+    <h2>Akashi's Improvement Arsenal</h2>
+    <table class='table1'>
+      <tr>
+        <th>Eq.</th>
+        <th>Lvl.</th>
+        <th>Req.</th>
+        <th>S.</th>
+        <th>S</th>
+        <th>M</th>
+        <th>T</th>
+        <th>W</th>
+        <th>T</th>
+        <th>F</th>
+        <th>S</th>
+        <th>FS.</th>
+      </tr>
+      <tr>
+        <td>Type 0 Reconnaissance Seaplane</td>
+        <td>0</td>
+        <td>1x Type 0 Reconnaissance Seaplane</td>
+        <td>2/3</td>
+        <td>A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>A</td>
+        <td>A</td>
+        <td>A</td>
+        <td>Akitsushima Kai</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>6</td>
+        <td>2x Type 0 Reconnaissance Seaplane</td>
+        <td>3/5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Ct</td>
+        <td>Ct</td>
+        <td>Chitose A</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>10</td>
+        <td>3X Type 0 Fighter Model 21</td>
+        <td>5/10</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Cy</td>
+        <td>Cy</td>
+        <td></td>
+        <td></td>
+        <td>Chiyoda A</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Prod.</td>
+        <td>1x Type 2 Seaplane Fighter Kai</td>
+        <td>5/10</td>
+        <td></td>
+        <td>M</td>
+        <td>M</td>
+        <td>M</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Mizuho (Kai)</td>
+      </tr>
+
+      <tr>
+        <td>Type 2 Seaplane Fighter Kai</td>
+        <td>0</td>
+        <td>2x Type 0 Fighter Model 21</td>
+        <td>5/6</td>
+        <td>M</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>M</td>
+        <td>M</td>
+        <td>Mizuho (Kai)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>6</td>
+        <td>2x Type 0 Reconnaissance Seaplane</td>
+        <td>7/8</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>10</td>
+        <td>2x Zuiun</td>
+        <td>9/16</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>Prod.</td>
+        <td>1x Kyoufuu Kai</td>
+        <td>5/10</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Type 0 Observation Seaplane</td>
+        <td>0</td>
+        <td>1x Zuiun</td>
+        <td>3/5</td>
+        <td></td>
+        <td>Mi</td>
+        <td>Mi</td>
+        <td>Mi</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Mizuho (Kai)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>6</td>
+        <td>1x Type 0 Observation Seaplane</td>
+        <td>4/7</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Mu</td>
+        <td>Mu</td>
+        <td>Mu</td>
+        <td>Musashi (Kai)</td>
+      </tr>
+      
+      <tr>
+        <td>Daihatsu Landing Craft</td>
+        <td>0</td>
+        <td>1x Drum Canister</td>
+        <td>1/2</td>
+        <td>Ab</td>
+        <td>Ab</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Ab</td>
+        <td>Ab</td>
+        <td>Abukuma Kai Ni</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Ak</td>
+        <td></td>
+        <td></td>
+        <td>Ak</td>
+        <td>Ak</td>
+        <td>Ak</td>
+        <td>Ak</td>
+        <td>Akitsu Maru (Kai)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>6</td>
+        <td>1x 7.7mm Machine Gun</td>
+        <td>2/3</td>
+        <td>K</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>K</td>
+        <td>K</td>
+        <td>K</td>
+        <td>Kinu Kai Ni</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Satsuki Kai Ni</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>T</td>
+        <td>T</td>
+        <td>T</td>
+        <td></td>
+        <td></td>
+        <td>Tatsuta Kai Ni</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>10</td>
+        <td>3x 12.7mm Single Machine Gun Mount</td>
+        <td>3/7</td>
+        <td>Ab</td>
+        <td>Ab</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Ab</td>
+        <td>Ab</td>
+        <td>Abukuma Kai Ni</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Ak</td>
+        <td></td>
+        <td></td>
+        <td>Ak</td>
+        <td>Ak</td>
+        <td>Ak</td>
+        <td>Ak</td>
+        <td>Akitsu Maru (Kai)</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Prod. 1x Daihatsu Landing Craft (Type 89 Medium Tank & Landing Force)</td>
+        <td></td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td>S</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Satsuki Kai Ni</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>4x Daihatsu Landing Craft</td>
+        <td>6/12</td>
+        <td>K</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>K</td>
+        <td>K</td>
+        <td>K</td>
+        <td>Kinu Kai Ni</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Prod. 1x Toku Daihatsu Landing Craft</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>T</td>
+        <td>T</td>
+        <td>T</td>
+        <td></td>
+        <td></td>
+        <td>Tatsuta Kai Ni</td>
+      </tr>
+    </table>
+  </body>
+</html>
